@@ -20,8 +20,8 @@ const Services = () => {
         <div className='mb-8'>
             <SectionTitle subHeading={"What can i do for you?"} heading={"SERVICES I WILL PROVIDE"} sectionLogo={serviceIcon}></SectionTitle>
             <div>
-                <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex justify-center content-center w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
                         <div className="w-full">
                             <div className="service-card hvr-float">
                                 <div className='flex justify-center'>
@@ -29,24 +29,6 @@ const Services = () => {
                                 </div>
                                 <h3 className="service-card-title">Web Development</h3>
                                 <p className='text-base'>Get the best Web Development service And, I won't leave you till your satisfaction. </p>
-                            </div>
-                        </div>
-                        <div className="w-full">
-                            <div className="service-card hvr-float">
-                                <div className='flex justify-center'>
-                                    <img className="card-icon rotate-icon" src={uiDesign} alt="" />
-                                </div>
-                                <h3 className="service-card-title">UI / UX Design</h3>
-                                <p className='text-base'>Get the best UI / UX Design, I won't leave you till your satisfaction. </p>
-                            </div>
-                        </div>
-                        <div className="w-full">
-                            <div className="service-card hvr-float">
-                                <div className='flex justify-center'>
-                                    <img className="card-icon rotate-icon" src={wordpress} alt="" />
-                                </div>
-                                <h3 className="service-card-title">Wordpress Development</h3>
-                                <p className='text-base'>You can get Best Website with Custom Wordpress Theme or Premium Theme. </p>
                             </div>
                         </div>
                         <div className="w-full">
@@ -61,21 +43,42 @@ const Services = () => {
                         <div className="w-full">
                             <div className="service-card hvr-float">
                                 <div className='flex justify-center'>
-                                    <img className="card-icon rotate-icon" src={desktop} alt="" />
+                                    <img className="card-icon rotate-icon" src={wordpress} alt="" />
                                 </div>
-                                <h3 className="service-card-title">Desktop Application</h3>
-                                <p className='text-base'>Get multi-featured Desktop Application for Your Company. </p>
+                                <h3 className="service-card-title">Wordpress Development</h3>
+                                <p className='text-base'>You can get Best Website with Custom Wordpress Theme or Premium Theme. </p>
                             </div>
                         </div>
+                        <div className="w-full">
+                            <div className="service-card hvr-float">
+                                <div className='flex justify-center'>
+                                    <img className="card-icon rotate-icon" src={uiDesign} alt="" />
+                                </div>
+                                <h3 className="service-card-title">UI / UX Design</h3>
+                                <p className='text-base'>Get the best UI / UX Design, I won't leave you till your satisfaction. </p>
+                            </div>
+                        </div>
+
+
+
                         <div className="w-full">
                             <div className="service-card hvr-float">
                                 <div className='flex justify-center'>
                                     <img className="card-icon rotate-icon" src={graphics} alt="" />
                                 </div>
                                 <h3 className="service-card-title">Graphics Design</h3>
-                                <p className='text-base'>I will help you to make your dream come true.</p>
+                                <p className='text-base'>I will help you bring your dream to life through creative graphic design</p>
                             </div>
                         </div>
+                        {/* <div className="w-full">
+                            <div className="service-card hvr-float">
+                                <div className='flex justify-center'>
+                                    <img className="card-icon rotate-icon" src={desktop} alt="" />
+                                </div>
+                                <h3 className="service-card-title">Desktop Application</h3>
+                                <p className='text-base'>Get multi-featured Desktop Application for Your Company. </p>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
