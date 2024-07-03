@@ -4,6 +4,7 @@
     transition: opacity 0.8s ease;
 }
 
+
 .single-project:hover .project-action {
     opacity: 1;
     visibility: visible;

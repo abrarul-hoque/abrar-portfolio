@@ -17,7 +17,7 @@ const Services = () => {
     //     <FaProjectDiagram></FaProjectDiagram>
     // </>
     return (
-        <div>
+        <div className='mb-8'>
             <SectionTitle subHeading={"What can i do for you?"} heading={"SERVICES I WILL PROVIDE"} sectionLogo={serviceIcon}></SectionTitle>
             <div>
                 <div className="container">
@@ -55,7 +55,7 @@ const Services = () => {
                                     <img className="card-icon rotate-icon" src={html} alt="" />
                                 </div>
                                 <h3 className="service-card-title">PSD to HTML</h3>
-                                <p>I will convert your dream PSD/XD/FIGMA/PDF design to HTML. </p>
+                                <p className='text-base'>I will convert your dream PSD/XD/FIGMA/PDF design to HTML. </p>
                             </div>
                         </div>
                         <div className="w-full">

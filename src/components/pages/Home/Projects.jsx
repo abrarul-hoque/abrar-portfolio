@@ -14,10 +14,10 @@ const Projects = () => {
                 <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
                     <div className="hero rounded-xl" style={{ backgroundImage: `url(${fhdc})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
-                        <div className="hero-content py-12 text-neutral-content text-center">
+                        <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
                                 <h1 className="mb-4 text-3xl font-bold">Dr. Fazlul Hazera Degree college</h1>
-                                <p className="mb-5">
+                                <p className="mb-3 text-base">
                                     An Institute Management Website (WP)
                                 </p>
                                 <div className='project-action '>
@@ -29,7 +29,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
+                {/* <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
                     <div className="hero rounded-xl" style={{ backgroundImage: `url(${fhdc})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-60"></div>
                         <div className="hero-content py-12 text-neutral-content text-center">
@@ -113,7 +113,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 
