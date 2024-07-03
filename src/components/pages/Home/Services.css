@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.service-minititle {
+    position: relative;
+    font-size: 18px;
+}
+
+.service-minititle:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%);
+}
+
+.service-minititle:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%);
+}
+
+.service-bigtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.service-logo-block {
+    position: relative;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* color: rgb(251, 45, 8); */
+}
+
+.service-logo-block:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 56%;
+    transform: translateX(-50%);
+}
+
+.service-logo-block:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 44%;
+    transform: translateX(-50%);
+}
+
+
+
+.service-logo {
+    width: 40px;
+}
+
+.rotate-icon {
+    transition: transform 1s;
+}
+
+.rotate-icon:hover {
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
+
+.service-card {
+    /* border: 4px solid #ff2600; */
+    border: 4px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.service-card:hover {
+    border: 4px solid #fff;
+    /* box-shadow: 4px 6px 10px lightgray ; */
+    transition: 0.5s;
+}
+
+.service-card:hover>.rotate-icon {
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
+
+
+.card-icon {
+    width: 60px;
+    margin: 20px;
+}
+
+.service-card-title {
+    color: #ff2c07;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.service-description {
+    padding: 0 100px !important;
+}
+
+.service-card p {
+    padding: 10px;
+}
+
+
+/* ============================================================================================== */
+/* Responsive / Mobile Screen*/
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .service-minititle:after {
+        width: 8%;
+        left: 85%;
+    }
+
+    .service-minititle:before {
+        width: 8%;
+        left: 15%;
+    }
+
+    .service-bigtitle {
+        font-size: 28px;
+    }
+
+    .service-logo-block:after {
+        width: 8%;
+        left: 65%;
+    }
+
+    .service-logo-block:before {
+        width: 8%;
+        left: 35%;
+    }
+
+    .service-description {
+        padding: 10px 30px !important;
+    }
+
+}

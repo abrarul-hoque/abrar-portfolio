@@ -9,7 +9,8 @@ const Banner = () => {
             <div className='w-full lg:w-5/12 text-center p-2'>
                 <h4 className='text-2xl'>Welcome, I'm Abrarul Hoque </h4>
                 <h1 className="text-5xl my-3 font-extrabold colorText">Web Developer</h1>
-                <h6 className="text-base">Expert JavaScript Developer & Innovator in Modern Web Technologies</h6>
+                {/* <h6 className="text-base">Expert JavaScript Developer & Innovator in Modern Web Technologies</h6> */}
+                <h6 className="text-base">Accomplished JavaScript Developer and Innovator in Modern Web Technologies, renowned for creating sophisticated applications with deep expertise in JavaScript, React, and Firebase.</h6>
                 <div className='my-8'>
                     <button className='btn mr-2'>Download CV</button>
                     <button className='btn bg-[#002366] hover:bg-white text-white hover:text-[#002366] border-2'>Contact</button>

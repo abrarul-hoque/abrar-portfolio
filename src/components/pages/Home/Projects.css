@@ -1,0 +1,10 @@
+.project-action {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease;
+}
+
+.single-project:hover .project-action {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.skill-icon {
+    position: relative;
+    width: 35px;
+}
+
+
+.skill-icon:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: red;
+    border-radius: 10px;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%);
+}
+
+.skill-icon:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%);
+}
+
+.section-minititle {
+    position: relative;
+    font-size: 18px;
+    /* color: rgb(251, 45, 8); */
+}
+
+.section-minititle:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%);
+}
+
+.section-minititle:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%);
+}
+
+.section-bigtitle {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+
+
+
+.section-logo-block {
+    position: relative;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* color: rgb(251, 45, 8); */
+}
+
+.section-logo-block:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 56%;
+    transform: translateX(-50%);
+}
+
+.section-logo-block:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 7%;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 44%;
+    transform: translateX(-50%);
+}
+
+
+
+.section-logo {
+    width: 40px;
+}
+
+.rotate-icon {
+    transition: transform 1s;
+}
+
+.rotate-icon:hover {
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
