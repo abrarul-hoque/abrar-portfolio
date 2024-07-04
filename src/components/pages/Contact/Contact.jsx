@@ -4,15 +4,12 @@ import { IoMdSend } from "react-icons/io";
 import contactImg from '../../../assets/image/contact.gif';
 import { Helmet } from "react-helmet";
 import './Contact.css';
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+
 const Contact = () => {
+    const form = useRef();
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
-
-
-    const onSubmit = (data) => {
-        // console.log(data)
-        successToast();
-        reset();
-    }
     const successToast = () => toast.success('Thank you for your message! We will get back to you soon!', {
         position: "top-right",
         autoClose: 5000,
@@ -24,6 +21,27 @@ const Contact = () => {
         theme: "colored",
         transition: Bounce,
     });
+
+    const serviceID = 'service_gnudsbw';
+    const templateID = 'template_xm7bium';
+
+    const onSubmit = (data) => {
+        // console.log(data)
+        // console.log(form.current)
+
+        // sending form data to email
+        emailjs.sendForm(serviceID, templateID, form.current, {
+            publicKey: 'EmS6tprw7i2iUWHtn',
+        })
+            .then(() => {
+                successToast();
+                reset();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }
+
 
     return (
         <div>
@@ -40,15 +58,15 @@ const Contact = () => {
                     </div>
                     <div className='w-full lg:w-1/2 contact-form p-4 bg-[#00246606]' >
                         {/* React Hook Form`` */}
-                        <form onSubmit={handleSubmit(onSubmit)} className='space-y-3'>
+                        <form ref={form} onSubmit={handleSubmit(onSubmit)} className='space-y-3'>
                             {/* register your input into the hook by invoking the "register" function */}
                             <h1 className="text-xl">Your Name</h1>
-                            <input type="text" className='form-control-contact input w-full' placeholder="Your Name" {...register("name", { required: true })} />
-                            {errors.name && <span className='error'>Name is required</span>}
+                            <input type="text" className='form-control-contact input w-full' placeholder="Your Name" {...register("from_name", { required: true })} />
+                            {errors.from_name && <span className='error'>Name is required</span>}
 
                             <h1 className="text-xl">Your Email</h1>
-                            <input type="email" className='form-control-contact input w-full' placeholder="Your Email" {...register("email", { required: true })} />
-                            {errors.email && <span className='error'>Email is required</span>}
+                            <input type="email" className='form-control-contact input w-full' placeholder="Your Email" {...register("from_email", { required: true })} />
+                            {errors.from_email && <span className='error'>Email is required</span>}
                             {/* <input type="text" className='form-control input w-full h-[100px]' placeholder="Your Email" {...register("message", { required: true })} /> */}
                             <h1 className="text-xl">Your Message</h1>
                             <textarea type="text" className='form-control-contact input w-full h-[100px] px-4 pt-2' placeholder="Your Message" {...register("message", { required: true })}></textarea>

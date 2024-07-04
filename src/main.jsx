@@ -10,6 +10,7 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import Contact from './components/pages/Contact/Contact.jsx';
 import 'react-toastify/dist/ReactToastify.css';
+import About from './components/pages/About/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       },
     ]
   },

@@ -11,8 +11,10 @@ const Header = () => {
         <li className='mr-2'> <HashLink to="/#projects">Projects</HashLink></li>
         <li className='mr-2'> <HashLink to="/#services">Services</HashLink></li>
         <li className='mr-2'> <HashLink to="/#skills">Skills</HashLink></li>
+        <li className='mr-2'> <NavLink to="/about">About Me</NavLink></li>
         <li className='mr-2'> <NavLink to="/contact">Contact</NavLink></li>
-        {/* <li className='mr-2'> <HashLink smooth to="/#projects">Projects</HashLink></li> */}
+
+
     </>
     return (
         <div className='max-w-6xl mx-auto'>
