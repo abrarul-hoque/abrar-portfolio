@@ -121,3 +121,82 @@ html {
     transform: rotate(360deg);
     transition: transform 1.5s;
 }
+
+
+
+/* ============================================================================================== */
+/* Responsive / Mobile Screen*/
+@media only screen and (min-width: 300px) and (max-width: 380px) {
+    .section-minititle:after {
+        width: 60px;
+        top: 52%;
+        left: 90%;
+    }
+
+    .section-minititle:before {
+        width: 60px;
+        top: 52%;
+        left: 10%;
+    }
+
+    .section-logo-block:after {
+        width: 60px;
+        left: 69%;
+    }
+
+    .section-logo-block:before {
+        width: 60px;
+        left: 30%;
+    }
+
+}
+
+/* ============================================================================================== */
+/* Responsive / Medium Screen*/
+@media only screen and (min-width: 385px) and (max-width: 620px) {
+    .section-minititle:after {
+        width: 70px;
+        left: 85%;
+    }
+
+    .section-minititle:before {
+        width: 70px;
+        left: 15%;
+    }
+
+    .section-logo-block:after {
+        width: 60px;
+        left: 72%;
+    }
+
+    .section-logo-block:before {
+        width: 60px;
+        left: 28%;
+    }
+}
+
+
+/* ============================================================================================== */
+/* Responsive / Medium Screen*/
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+    .section-minititle:after {
+        width: 90px;
+        left: 78%;
+    }
+
+    .section-minititle:before {
+        width: 90px;
+        left: 22%;
+    }
+
+
+    .section-logo-block:after {
+        width: 80px;
+        left: 66%;
+    }
+
+    .section-logo-block:before {
+        width: 60px;
+        left: 34%;
+    }
+}
