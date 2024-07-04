@@ -52,6 +52,7 @@ const Contact = () => {
             </Helmet>
             <div className='max-w-6xl mx-auto'>
                 <h1 className="text-5xl text-center my-10 font-bold text-white">Get in Touch</h1>
+                <p className="text-center text-base">If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.</p>
                 <div className="flex flex-col md:flex-col lg:flex-row gap-4 my-6">
                     <div className='w-full lg:w-1/2 bg-[#00246661] rounded-xl'>
                         <img src={contactImg} alt="" />
