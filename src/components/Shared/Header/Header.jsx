@@ -1,13 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+
+
 const Header = () => {
     const navLinks = <>
         <li className='mr-2'> <NavLink to="/">Home</NavLink></li>
-        {/* <li> <NavLink to="/#projects">Projects</NavLink></li>
-        <li className='mr-2'> <NavLink to="/#services">Services</NavLink></li>
-        <li className='mr-2'> <NavLink to="/#skills">Skills</NavLink></li> */}
+        <li className='mr-2'> <HashLink to="/#projects">Projects</HashLink></li>
+        <li className='mr-2'> <HashLink to="/#services">Services</HashLink></li>
+        <li className='mr-2'> <HashLink to="/#skills">Skills</HashLink></li>
         <li className='mr-2'> <NavLink to="/contact">Contact</NavLink></li>
+        {/* <li className='mr-2'> <HashLink smooth to="/#projects">Projects</HashLink></li> */}
     </>
     return (
         <div className='max-w-6xl mx-auto'>
@@ -30,7 +35,7 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-[#001d52] border-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             {navLinks}
                         </ul>
                     </div>
@@ -42,7 +47,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className='btn hireBtn'>Hire Me</button>
+                    <Link to="https://www.upwork.com/freelancers/~01418645febdb5da8d" target='_blank' className='btn hireBtn'>Hire Me</Link>
                     {/* <a className="btn">Hire Me</a> */}
                 </div>
             </div>

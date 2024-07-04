@@ -9,6 +9,7 @@ import {
 import Root from './components/Root/Root.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import Contact from './components/pages/Contact/Contact.jsx';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {

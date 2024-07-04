@@ -6,7 +6,6 @@
     box-shadow: 0px 2px 2px lightgray;
 }
 
-
 .navBarBrand {
     /* color: white; */
     font-weight: 700;
@@ -28,9 +27,13 @@
 .menu li>details>summary:active {
     --tw-bg-opacity: 1;
     background-color: #002366;
-    border: 1px solid white;
+    border: 2px solid white;
     --tw-text-opacity: 1;
     color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));
+}
+
+.dropdown-content {
+    border: 1px solid rgba(128, 128, 128, 0.568);
 }
 
 

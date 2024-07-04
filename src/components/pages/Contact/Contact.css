@@ -1,0 +1,20 @@
+.form-control-contact {
+    background-color: #011c4e;
+    color: #fff;
+    border: 1px solid gray;
+}
+
+.form-control-contact::placeholder {
+    color: #7484a1;
+}
+
+.form-control-contact:focus {
+    background-color: #00153d;
+    color: #fff;
+}
+
+
+
+.error {
+    color: #ff4524;
+}

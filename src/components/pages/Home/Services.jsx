@@ -17,7 +17,7 @@ const Services = () => {
     //     <FaProjectDiagram></FaProjectDiagram>
     // </>
     return (
-        <div className='mb-8'>
+        <div id='services' className='mb-8'>
             <SectionTitle subHeading={"What can i do for you?"} heading={"SERVICES I WILL PROVIDE"} sectionLogo={serviceIcon}></SectionTitle>
             <div>
                 <div className="flex justify-center content-center w-full">

@@ -1,7 +1,9 @@
 import bannerImg from '../../../assets/banner-img.png';
 import './Banner.css';
-import { FaFacebook, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaDownload, FaFacebook, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import gmail from '../../../assets/icon/gmail.png';
+import { IoMdCloudDownload } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -12,8 +14,10 @@ const Banner = () => {
                 {/* <h6 className="text-base">Expert JavaScript Developer & Innovator in Modern Web Technologies</h6> */}
                 <h6 className="text-base">Accomplished JavaScript Developer and Innovator in Modern Web Technologies, renowned for creating sophisticated applications with deep expertise in JavaScript, React, and Firebase.</h6>
                 <div className='my-8'>
-                    <button className='btn mr-2'>Download CV</button>
-                    <button className='btn bg-[#002366] hover:bg-white text-white hover:text-[#002366] border-2'>Contact</button>
+                    <a href="https://drive.usercontent.google.com/download?id=1VyUstw7_oIVmbn7TcfCOaGRVJ73DGS9m&export=download&authuser=3&confirm=t&uuid=e7068b15-aef5-4924-9a40-f6d891e27ddb&at=APZUnTWP4il9oMPDbHaavhsLk5sL:1720072954991">
+                        <button className='btn mr-2'><FaDownload /> Download CV</button>
+                    </a>
+                    <Link to="/contact" className='btn bg-[#002366] hover:bg-white text-white hover:text-[#002366] border-2'>Contact</Link>
                 </div>
             </div>
             <div className='w-full lg:w-6/12 '>
