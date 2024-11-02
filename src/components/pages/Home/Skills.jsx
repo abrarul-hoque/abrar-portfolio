@@ -2,7 +2,7 @@ import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import skillLogo from '../../../assets/icon/skills.png';
 import { FaBootstrap, FaCpanel, FaCss3, FaHtml5, FaJs, FaNode, FaNodeJs, FaReact, FaWordpress } from "react-icons/fa";
 import './Skills.css';
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiFirebase } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
@@ -72,6 +72,16 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
+                <div className="hover:text-[#000] border-2 rounded-xl p-6  single-skill hvr-float cursor-pointer">
+                    <div className="flex justify-center">
+                        <div>
+                            <div className="flex justify-center mb-2">
+                                <RiNextjsFill className="text-6xl text-[#000] bg-white rounded-full"></RiNextjsFill>
+                            </div>
+                            <h3 className="text-3xl font-bold">NextJs</h3>
+                        </div>
+                    </div>
+                </div>
                 <div className="hover:text-[#F6820D] border-2 rounded-xl p-6  single-skill hvr-float cursor-pointer">
                     <div className="flex justify-center">
                         <div>
@@ -132,6 +142,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );
