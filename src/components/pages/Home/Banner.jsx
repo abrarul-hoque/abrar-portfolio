@@ -14,7 +14,7 @@ const Banner = () => {
                 {/* <h6 className="text-base">Expert JavaScript Developer & Innovator in Modern Web Technologies</h6> */}
                 <h6 className="text-base">Accomplished JavaScript Developer and Innovator in Modern Web Technologies, renowned for creating sophisticated applications with deep expertise in JavaScript, React, and Firebase.</h6>
                 <div className='my-8'>
-                    <a href="https://drive.usercontent.google.com/download?id=1VyUstw7_oIVmbn7TcfCOaGRVJ73DGS9m&export=download&authuser=3&confirm=t&uuid=e7068b15-aef5-4924-9a40-f6d891e27ddb&at=APZUnTWP4il9oMPDbHaavhsLk5sL:1720072954991">
+                    <a href="https://drive.google.com/uc?export=download&id=1kesPHxFNLNvwI4dkmpY8u2eTsNoBSW3U">
                         <button className='btn mr-2'><FaDownload /> Download CV</button>
                     </a>
                     <Link to="/contact" className='btn bg-[#002366] hover:bg-white text-white hover:text-[#002366] border-2'>Contact</Link>
@@ -46,7 +46,7 @@ const Banner = () => {
                         </a>
                     </li>
                     <li>
-                        <a className="flex justify-center" href="mailto:jubairctg99@gmail.com?Subject=Hello_Dear" target="_blank">
+                        <a className="flex justify-center" href="mailto:abrarulhoque.jubair@gmail.com?Subject=Hello_Dear" target="_blank">
                             <img className="mail-link" src={gmail} alt="" /></a>
                     </li>
                 </div>
