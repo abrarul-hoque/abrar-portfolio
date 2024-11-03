@@ -22,8 +22,11 @@ const Projects = () => {
             <SectionTitle heading={"Projects"} subHeading={"What i have made"} sectionLogo={projectIcon}></SectionTitle>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${quizpulse})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{
+                        backgroundImage: `url(${quizpulse})`, backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}>
                         <div className="hero-overlay  rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -35,16 +38,15 @@ const Projects = () => {
                                     <a href="https://github.com/mdmarufhossianbd/quizpluse" target='_blank'><button className='btn btn-sm text-[#002366] mr-2'><FaGithub /> Code</button></a>
                                     <a href="https://quizpluse.vercel.app/" target='_blank'><button className='btn btn-sm text-[#002366]'><PiCursorClickFill />
                                         Live</button></a>
-                                    {/* <button className="btn btn-primary">Live</button> */}
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${fhdc})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${fhdc})`, }}>
                         <div className="hero-overlay  rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -63,8 +65,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${isfbd})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${isfbd})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -83,8 +85,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${surveymaster})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${surveymaster})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -103,8 +105,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${jobportal})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${jobportal})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -123,8 +125,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${menufast})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${menufast})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -141,8 +143,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${uktell})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${uktell})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -159,8 +161,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${popit})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${popit})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
@@ -177,8 +179,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Single Project */}
-                <div className="w-full border-4 border-white hover:border-red-500 rounded-xl single-project">
-                    <div className="hero rounded-xl" style={{ backgroundImage: `url(${homesmart})`, }}>
+                <div className="w-full border-4 border-white hover:border-purple-800 rounded-xl single-project transition-all duration-300">
+                    <div className="hero rounded-xl h-full" style={{ backgroundImage: `url(${homesmart})`, }}>
                         <div className="hero-overlay rounded-xl bg-opacity-70"></div>
                         <div className="hero-content pt-28 text-neutral-content text-center">
                             <div className="max-w-md">
