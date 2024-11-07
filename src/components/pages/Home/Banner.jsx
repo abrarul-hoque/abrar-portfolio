@@ -1,6 +1,6 @@
 import bannerImg from '../../../assets/banner-img.png';
 import './Banner.css';
-import { FaDownload, FaFacebook, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaDownload, FaFacebook, FaGit, FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import gmail from '../../../assets/icon/gmail.png';
 import { IoMdCloudDownload } from "react-icons/io";
 import { Link } from 'react-router-dom';
@@ -41,8 +41,8 @@ const Banner = () => {
                         </a>
                     </li>
                     <li>
-                        <a className="flex justify-center" href="https://twitter.com/jubair_1125" target="_blank">
-                            <FaTwitter className='twt-link'></FaTwitter>
+                        <a className="flex justify-center" href="https://github.com/abrarul-hoque" target="_blank">
+                            <FaGithub className='ghub-link'></FaGithub>
                         </a>
                     </li>
                     <li>
